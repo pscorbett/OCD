@@ -2967,6 +2967,46 @@
 		)
 		(uuid "96433e7b-ae14-4cef-aa9a-9b5fd0f5d93e")
 	)
+	(text_box "Barrel jack is Center-Negative (guitar pedal convention)\n\nBattery is only switched on when no power is inserted and when input jack is inserted. "
+		(exclude_from_sim no)
+		(at 38.1 15.24 0)
+		(size 45.72 12.7)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "ada3331e-c52a-4cd7-b33e-30eb5071d651")
+	)
+	(text_box "Input jack must be TS, not TRS. Input is grounded when no input jack is inserted. True bypass power leaves circuit powered when DC jack is used, so this prevents input from floating."
+		(exclude_from_sim no)
+		(at 22.86 106.68 0)
+		(size 45.72 12.7)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d5140a3e-49ef-4fc1-bbca-21474dc72c7c")
+	)
 	(junction
 		(at 210.82 125.73)
 		(diameter 0)
@@ -3044,12 +3084,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b3c44d19-af43-4b44-be1d-3395830bcb1f")
-	)
-	(junction
-		(at 54.61 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b9d4e4bb-bb78-4386-926d-33e523f6b1d3")
 	)
 	(junction
 		(at 107.95 43.18)
@@ -3165,16 +3199,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 30.48) (xy 54.61 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d64e0f0-8979-4d0e-8109-6ca861c5c836")
-	)
-	(wire
-		(pts
 			(xy 173.99 123.19) (xy 173.99 121.92)
 		)
 		(stroke
@@ -3285,33 +3309,23 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 39.37) (xy 54.61 39.37)
+			(xy 46.99 33.02) (xy 34.29 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "32e978cd-bc2e-43f5-afd8-732b1c782b85")
+		(uuid "338110c2-bae1-4c08-b9f7-4863f3a6e153")
 	)
 	(wire
 		(pts
-			(xy 36.83 90.17) (xy 36.83 99.06)
+			(xy 36.83 90.17) (xy 36.83 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "34225c12-46ed-4a57-b95f-f472b9da1344")
-	)
-	(wire
-		(pts
-			(xy 46.99 33.02) (xy 50.8 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "35a10552-d082-48cf-add4-df9519893d63")
 	)
 	(wire
 		(pts
@@ -3325,6 +3339,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 30.48) (xy 77.47 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "394ac990-37e0-41a8-a837-c46d8ddb0d98")
+	)
+	(wire
+		(pts
 			(xy 31.75 147.32) (xy 31.75 151.13)
 		)
 		(stroke
@@ -3335,13 +3359,13 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 38.1) (xy 54.61 39.37)
+			(xy 46.99 50.8) (xy 46.99 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4118f6b6-58db-4697-9710-b74edb0c9821")
+		(uuid "41f3fb3f-4e73-408b-9db2-6c3706fc0fdd")
 	)
 	(wire
 		(pts
@@ -3425,16 +3449,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 33.02) (xy 50.8 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6489fc92-97cf-4872-8e14-0a94c578305d")
-	)
-	(wire
-		(pts
 			(xy 120.65 38.1) (xy 120.65 26.67)
 		)
 		(stroke
@@ -3482,6 +3496,16 @@
 			(type default)
 		)
 		(uuid "6d98c6a6-3c4b-41ba-9fdc-e18dc529b3bd")
+	)
+	(wire
+		(pts
+			(xy 34.29 35.56) (xy 39.37 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dbfa9ee-1449-427b-a2ab-fc289a16dd89")
 	)
 	(wire
 		(pts
@@ -3575,13 +3599,13 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 30.48) (xy 77.47 30.48)
+			(xy 46.99 58.42) (xy 46.99 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "99586439-965e-4a89-95fa-0aa5ea647f12")
+		(uuid "9a7b2c69-6f6f-42c7-a161-56062bb41455")
 	)
 	(wire
 		(pts
@@ -3742,6 +3766,16 @@
 			(type default)
 		)
 		(uuid "c0069b90-23ba-4e2a-b430-ccd74c56eb76")
+	)
+	(wire
+		(pts
+			(xy 39.37 35.56) (xy 39.37 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c01a0439-be14-4e2b-9439-16f044251e03")
 	)
 	(wire
 		(pts
@@ -3915,16 +3949,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 35.56) (xy 46.99 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1fc8682-43fc-4b1b-8c82-6faf49ef6d81")
-	)
-	(wire
-		(pts
 			(xy 95.25 30.48) (xy 77.47 30.48)
 		)
 		(stroke
@@ -4081,7 +4105,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 68.8848 170.18 0)
 			(effects
 				(font
@@ -4404,7 +4428,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 202.184 109.474 90)
 			(effects
 				(font
@@ -4472,7 +4496,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 92.71 112.0648 0)
 			(effects
 				(font
@@ -4605,7 +4629,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 181.864 134.874 90)
 			(effects
 				(font
@@ -4649,7 +4673,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 36.83 99.06 0)
+		(at 36.83 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4658,7 +4682,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d176a83-94f8-4e7b-911a-15f0bc3da4a8")
 		(property "Reference" "#PWR01"
-			(at 36.83 105.41 0)
+			(at 36.83 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4667,7 +4691,7 @@
 			)
 		)
 		(property "Value" "JGND"
-			(at 36.83 104.14 0)
+			(at 36.83 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4675,7 +4699,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 99.06 0)
+			(at 36.83 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4684,7 +4708,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 99.06 0)
+			(at 36.83 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4693,7 +4717,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 36.83 99.06 0)
+			(at 36.83 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4853,46 +4877,46 @@
 			)
 		)
 		(pin "12"
-			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de4")
+			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de5")
 		)
 		(pin "5"
-			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb857")
+			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb858")
 		)
 		(pin "6"
-			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b3")
+			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b4")
 		)
 		(pin "7"
-			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba4")
+			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba5")
 		)
 		(pin "9"
-			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd1")
+			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd2")
 		)
 		(pin "14"
-			(uuid "7489c404-1898-4072-af4e-0a6107f137de")
+			(uuid "7489c404-1898-4072-af4e-0a6107f137df")
 		)
 		(pin "11"
 			(uuid "005fc8bd-4df9-428a-8a94-e8d48e25f134")
 		)
 		(pin "10"
-			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f1")
+			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f2")
 		)
 		(pin "8"
-			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc1")
+			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc2")
 		)
 		(pin "13"
-			(uuid "92983320-fd71-4067-8980-d3fccacc08cf")
+			(uuid "92983320-fd71-4067-8980-d3fccacc08d0")
 		)
 		(pin "4"
 			(uuid "79d6f74e-dddb-4164-b06a-dd03a809bd74")
 		)
 		(pin "3"
-			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb89")
+			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8a")
 		)
 		(pin "2"
-			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2261")
+			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2262")
 		)
 		(pin "1"
-			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c3")
+			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c4")
 		)
 		(instances
 			(project "OCD"
@@ -4929,7 +4953,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 217.424 124.714 90)
 			(effects
 				(font
@@ -4999,7 +5023,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 98.806 120.904 90)
 			(effects
 				(font
@@ -5117,16 +5141,16 @@
 			(uuid "8bc3388f-9e93-4806-8ca2-a21d6d54b383")
 		)
 		(pin "5"
-			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb858")
+			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb859")
 		)
 		(pin "6"
-			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b4")
+			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b5")
 		)
 		(pin "7"
-			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba5")
+			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba6")
 		)
 		(pin "9"
-			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd2")
+			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd3")
 		)
 		(pin "14"
 			(uuid "92bede32-481f-40df-87ce-cfb33cb0ffac")
@@ -5135,10 +5159,10 @@
 			(uuid "f3d96ae9-8914-403b-850b-24c260c75330")
 		)
 		(pin "10"
-			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f2")
+			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f3")
 		)
 		(pin "8"
-			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc2")
+			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc3")
 		)
 		(pin "13"
 			(uuid "309e5411-7726-4ac0-8d27-9a9c971aaa02")
@@ -5147,13 +5171,13 @@
 			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eef00")
 		)
 		(pin "3"
-			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8a")
+			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8b")
 		)
 		(pin "2"
-			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2262")
+			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2263")
 		)
 		(pin "1"
-			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c4")
+			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c5")
 		)
 		(instances
 			(project "OCD"
@@ -5189,7 +5213,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 156.464 134.874 90)
 			(effects
 				(font
@@ -5259,7 +5283,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 32.766 143.764 90)
 			(effects
 				(font
@@ -5369,16 +5393,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Barrel_Jack_Switch")
-		(at 39.37 33.02 0)
+		(at 26.67 33.02 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5f5ffb7b-a667-48e4-9a40-8723645726ef")
 		(property "Reference" "J2"
-			(at 39.37 24.13 0)
+			(at 26.67 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5386,15 +5410,15 @@
 			)
 		)
 		(property "Value" "Barrel_Jack_Switch"
-			(at 39.37 26.67 0)
+			(at 26.67 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 40.64 34.036 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 27.94 32.004 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5403,7 +5427,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.taydaelectronics.com/datasheets/A-844.jpg"
-			(at 40.64 34.036 0)
+			(at 27.94 32.004 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5412,7 +5436,7 @@
 			)
 		)
 		(property "Description" "DC Barrel Jack with an internal switch"
-			(at 39.37 33.02 0)
+			(at 26.67 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5421,7 +5445,7 @@
 			)
 		)
 		(property "Manufacturer" " WEALTH METAL"
-			(at 39.37 33.02 0)
+			(at 26.67 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5430,7 +5454,7 @@
 			)
 		)
 		(property "Part Number" " DC Power Bulkhead Jack 2.1mm"
-			(at 39.37 33.02 0)
+			(at 26.67 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5439,7 +5463,7 @@
 			)
 		)
 		(property "Distributer" "TAYDA"
-			(at 39.37 33.02 0)
+			(at 26.67 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5448,7 +5472,7 @@
 			)
 		)
 		(property "SKU" " A-844"
-			(at 39.37 33.02 0)
+			(at 26.67 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5466,7 +5490,7 @@
 			(uuid "c69e7aed-c46f-41f2-a432-809bd23387d4")
 		)
 		(instances
-			(project ""
+			(project "OCD"
 				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
 					(reference "J2")
 					(unit 1)
@@ -5568,7 +5592,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 91.7448 170.18 0)
 			(effects
 				(font
@@ -5638,7 +5662,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical"
 			(at 29.21 168.91 0)
 			(effects
 				(font
@@ -5942,46 +5966,46 @@
 			)
 		)
 		(pin "12"
-			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de4")
+			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de6")
 		)
 		(pin "5"
-			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb857")
+			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb85a")
 		)
 		(pin "6"
-			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b3")
+			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b6")
 		)
 		(pin "7"
-			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba4")
+			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba7")
 		)
 		(pin "9"
-			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd1")
+			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd4")
 		)
 		(pin "14"
-			(uuid "7489c404-1898-4072-af4e-0a6107f137de")
+			(uuid "7489c404-1898-4072-af4e-0a6107f137e0")
 		)
 		(pin "11"
-			(uuid "f3d96ae9-8914-403b-850b-24c260c7532f")
+			(uuid "f3d96ae9-8914-403b-850b-24c260c75331")
 		)
 		(pin "10"
-			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f1")
+			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f4")
 		)
 		(pin "8"
-			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc1")
+			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc4")
 		)
 		(pin "13"
-			(uuid "92983320-fd71-4067-8980-d3fccacc08cf")
+			(uuid "92983320-fd71-4067-8980-d3fccacc08d1")
 		)
 		(pin "4"
-			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eeeff")
+			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eef01")
 		)
 		(pin "3"
-			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb89")
+			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8c")
 		)
 		(pin "2"
-			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2261")
+			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2264")
 		)
 		(pin "1"
-			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c3")
+			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c6")
 		)
 		(instances
 			(project ""
@@ -6017,7 +6041,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 156.464 109.474 90)
 			(effects
 				(font
@@ -6199,46 +6223,46 @@
 			)
 		)
 		(pin "12"
-			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de4")
+			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de7")
 		)
 		(pin "5"
-			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb857")
+			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb85b")
 		)
 		(pin "6"
-			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b3")
+			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b7")
 		)
 		(pin "7"
-			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba4")
+			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba8")
 		)
 		(pin "9"
-			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd1")
+			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd5")
 		)
 		(pin "14"
-			(uuid "7489c404-1898-4072-af4e-0a6107f137de")
+			(uuid "7489c404-1898-4072-af4e-0a6107f137e1")
 		)
 		(pin "11"
-			(uuid "f3d96ae9-8914-403b-850b-24c260c7532f")
+			(uuid "f3d96ae9-8914-403b-850b-24c260c75332")
 		)
 		(pin "10"
-			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f1")
+			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f5")
 		)
 		(pin "8"
-			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc1")
+			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc5")
 		)
 		(pin "13"
-			(uuid "92983320-fd71-4067-8980-d3fccacc08cf")
+			(uuid "92983320-fd71-4067-8980-d3fccacc08d2")
 		)
 		(pin "4"
-			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eeeff")
+			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eef02")
 		)
 		(pin "3"
-			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb89")
+			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8d")
 		)
 		(pin "2"
-			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2261")
+			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2265")
 		)
 		(pin "1"
-			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c3")
+			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c7")
 		)
 		(instances
 			(project ""
@@ -6277,7 +6301,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 96.266 38.354 90)
 			(effects
 				(font
@@ -6410,7 +6434,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 181.864 109.474 90)
 			(effects
 				(font
@@ -6480,7 +6504,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 233.934 133.096 90)
 			(effects
 				(font
@@ -6550,7 +6574,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 96.266 48.514 90)
 			(effects
 				(font
@@ -6684,7 +6708,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 231.14 124.7648 0)
 			(effects
 				(font
@@ -6754,7 +6778,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 108.9152 53.34 0)
 			(effects
 				(font
@@ -6864,7 +6888,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 54.61 35.56 0)
+		(at 46.99 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6873,7 +6897,7 @@
 		(fields_autoplaced yes)
 		(uuid "b9b721d6-2808-47e8-853a-7823a4aa7ca0")
 		(property "Reference" "BT1"
-			(at 58.42 32.4484 0)
+			(at 50.8 52.7684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6882,7 +6906,7 @@
 			)
 		)
 		(property "Value" "+9V Battery"
-			(at 58.42 34.9884 0)
+			(at 50.8 55.3084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6890,8 +6914,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 54.61 34.036 90)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 46.99 54.356 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6900,7 +6924,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 34.036 90)
+			(at 46.99 54.356 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6909,7 +6933,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 54.61 35.56 0)
+			(at 46.99 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6918,7 +6942,7 @@
 			)
 		)
 		(property "Manufacturer" "TAWAIN"
-			(at 54.61 35.56 0)
+			(at 46.99 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6927,7 +6951,7 @@
 			)
 		)
 		(property "Part Number" "BH9VPC"
-			(at 54.61 35.56 0)
+			(at 46.99 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6936,7 +6960,7 @@
 			)
 		)
 		(property "Distributer" "TAYDA"
-			(at 54.61 35.56 0)
+			(at 46.99 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6945,7 +6969,7 @@
 			)
 		)
 		(property "SKU" " A-843"
-			(at 54.61 35.56 0)
+			(at 46.99 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6960,7 +6984,7 @@
 			(uuid "ea9bb4ff-d353-44a6-ace8-473aa11eaead")
 		)
 		(instances
-			(project ""
+			(project "OCD"
 				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
 					(reference "BT1")
 					(unit 1)
@@ -6974,7 +6998,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(uuid "ba518880-614a-4794-8a00-41a98d1f6d60")
 		(property "Reference" "J3"
@@ -7107,7 +7131,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 78.4352 40.64 0)
 			(effects
 				(font
@@ -7220,13 +7244,79 @@
 		)
 	)
 	(symbol
+		(lib_id "power:Earth")
+		(at 39.37 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bdedd2c2-5fad-46fc-a654-537ea671c4ab")
+		(property "Reference" "#PWR026"
+			(at 39.37 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "JGND"
+			(at 39.37 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 39.37 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20778498-1e3c-4c53-9203-ca568776bc24")
+		)
+		(instances
+			(project "OCD"
+				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Osprey_Symbols:TE-CK-6.35-29B")
 		(at 27.94 85.09 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(uuid "c62715aa-b4c9-4ddc-809d-ee9679cdbc2f")
 		(property "Reference" "J1"
@@ -7361,7 +7451,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical"
 			(at 71.12 80.01 0)
 			(effects
 				(font
@@ -7425,31 +7515,31 @@
 			)
 		)
 		(pin "4"
-			(uuid "d488d359-efca-4d4d-b975-599d0651d94f")
+			(uuid "d488d359-efca-4d4d-b975-599d0651d950")
 		)
 		(pin "3"
-			(uuid "3c00433a-4932-4956-ac62-0480a6b0e8f5")
+			(uuid "3c00433a-4932-4956-ac62-0480a6b0e8f6")
 		)
 		(pin "2"
-			(uuid "d171487e-c8b3-4443-a278-3a99dcf95744")
+			(uuid "d171487e-c8b3-4443-a278-3a99dcf95745")
 		)
 		(pin "9"
-			(uuid "3910bfa2-605e-49b3-877e-204a5bd615d9")
+			(uuid "3910bfa2-605e-49b3-877e-204a5bd615da")
 		)
 		(pin "8"
-			(uuid "16def634-08d3-41eb-90ea-3735b63f3ffb")
+			(uuid "16def634-08d3-41eb-90ea-3735b63f3ffc")
 		)
 		(pin "6"
-			(uuid "0779148b-104c-4a12-ac82-19002fcba288")
+			(uuid "0779148b-104c-4a12-ac82-19002fcba289")
 		)
 		(pin "7"
-			(uuid "82a809d5-17bb-4946-929c-a36335be608e")
+			(uuid "82a809d5-17bb-4946-929c-a36335be608f")
 		)
 		(pin "1"
-			(uuid "3f83edf5-7dc0-4dc8-9af7-95dadc8aa3e8")
+			(uuid "3f83edf5-7dc0-4dc8-9af7-95dadc8aa3e9")
 		)
 		(pin "5"
-			(uuid "738f05ee-fcf2-469a-bb0e-5de883561d65")
+			(uuid "738f05ee-fcf2-469a-bb0e-5de883561d66")
 		)
 		(instances
 			(project ""
@@ -7554,7 +7644,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 98.806 105.664 90)
 			(effects
 				(font
@@ -7688,7 +7778,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical"
 			(at 245.11 80.01 0)
 			(effects
 				(font
@@ -7752,31 +7842,31 @@
 			)
 		)
 		(pin "4"
-			(uuid "d488d359-efca-4d4d-b975-599d0651d94f")
+			(uuid "d488d359-efca-4d4d-b975-599d0651d951")
 		)
 		(pin "3"
-			(uuid "3c00433a-4932-4956-ac62-0480a6b0e8f5")
+			(uuid "3c00433a-4932-4956-ac62-0480a6b0e8f7")
 		)
 		(pin "2"
-			(uuid "d171487e-c8b3-4443-a278-3a99dcf95744")
+			(uuid "d171487e-c8b3-4443-a278-3a99dcf95746")
 		)
 		(pin "9"
-			(uuid "3910bfa2-605e-49b3-877e-204a5bd615d9")
+			(uuid "3910bfa2-605e-49b3-877e-204a5bd615db")
 		)
 		(pin "8"
-			(uuid "16def634-08d3-41eb-90ea-3735b63f3ffb")
+			(uuid "16def634-08d3-41eb-90ea-3735b63f3ffd")
 		)
 		(pin "6"
-			(uuid "0779148b-104c-4a12-ac82-19002fcba288")
+			(uuid "0779148b-104c-4a12-ac82-19002fcba28a")
 		)
 		(pin "7"
-			(uuid "82a809d5-17bb-4946-929c-a36335be608e")
+			(uuid "82a809d5-17bb-4946-929c-a36335be6090")
 		)
 		(pin "1"
-			(uuid "3f83edf5-7dc0-4dc8-9af7-95dadc8aa3e8")
+			(uuid "3f83edf5-7dc0-4dc8-9af7-95dadc8aa3ea")
 		)
 		(pin "5"
-			(uuid "738f05ee-fcf2-469a-bb0e-5de883561d65")
+			(uuid "738f05ee-fcf2-469a-bb0e-5de883561d67")
 		)
 		(instances
 			(project ""
