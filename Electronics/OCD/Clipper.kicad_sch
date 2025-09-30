@@ -2071,6 +2071,12 @@
 		(uuid "a0b1c8f0-db55-47be-bbf1-9bcc84fa33c0")
 	)
 	(junction
+		(at 236.22 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a228dd14-942e-4073-9331-9f3d16a9c0b2")
+	)
+	(junction
 		(at 236.22 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2081,12 +2087,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ae471484-3ddb-4181-aecf-bfb4efa9952a")
-	)
-	(junction
-		(at 236.22 116.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b353201e-df79-4776-a155-db88287a08ac")
 	)
 	(junction
 		(at 105.41 118.11)
@@ -2496,13 +2496,13 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 106.68) (xy 236.22 116.84)
+			(xy 236.22 116.84) (xy 238.76 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "452c1ba0-fa65-4da0-90db-b097b017d9b8")
+		(uuid "43dcbd1f-20c1-40e0-960e-89af63864609")
 	)
 	(wire
 		(pts
@@ -2576,7 +2576,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 116.84) (xy 236.22 129.54)
+			(xy 236.22 106.68) (xy 236.22 116.84)
 		)
 		(stroke
 			(width 0)
@@ -2883,6 +2883,16 @@
 			(type default)
 		)
 		(uuid "a7d73d38-8547-423f-9d30-42d706dc9024")
+	)
+	(wire
+		(pts
+			(xy 236.22 116.84) (xy 236.22 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abbf8411-0ee5-4e14-bc7f-38f3d670228c")
 	)
 	(wire
 		(pts
@@ -3246,16 +3256,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 116.84) (xy 238.76 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ebc65669-f8b7-46a3-9785-e4a6be4caeb1")
-	)
-	(wire
-		(pts
 			(xy 176.53 182.88) (xy 176.53 185.42)
 		)
 		(stroke
@@ -3273,6 +3273,16 @@
 			(type default)
 		)
 		(uuid "eec74547-98f6-4693-8706-87efe371a848")
+	)
+	(wire
+		(pts
+			(xy 246.38 116.84) (xy 248.92 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3803b81-4c16-470f-8ce0-265bb6e27b9a")
 	)
 	(wire
 		(pts
@@ -3303,16 +3313,6 @@
 			(type default)
 		)
 		(uuid "f97fda0f-522a-4384-8c74-1e492c1207a3")
-	)
-	(wire
-		(pts
-			(xy 246.38 116.84) (xy 248.92 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa44bca8-f8aa-43ec-9f86-21f0bc918d42")
 	)
 	(wire
 		(pts
@@ -3756,7 +3756,7 @@
 	)
 	(symbol
 		(lib_id "PCM_Diode_AKL:1N4148WS")
-		(at 242.57 116.84 0)
+		(at 242.57 116.84 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
