@@ -1,0 +1,28 @@
+# Backups and autosave files (ignore)
+*.bak
+*.bck
+*-bak.kicad_pcb
+*kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_pro-bak
+*autosave*
+*.tmp
+*.tmp-bak
+
+# Documentation files for symbols
+# *dcm 
+
+# Simulation outputs (ignore)
+*.log
+*.raw
+
+# Cache or temporary files (ignore)
+*cache*
+*.restore
+
+# Uncomment this if you want to ignore fabrication outputs (optional)
+# *.gbr
+# *.drl
+# *.pos
+# *.pdf
+# *.zip

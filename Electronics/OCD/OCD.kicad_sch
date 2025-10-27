@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Over-Complicated Distortion (OCD)")
-		(date "2025-09-14")
-		(rev "A")
+		(date "2025-10-26")
+		(rev "B")
 		(company "Osprey Instruments")
 	)
 	(lib_symbols
@@ -2717,6 +2717,164 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_DIP_x01"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_DIP_x01"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "dip switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SW?DIP?x1*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_DIP_x01_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.127) (xy 2.3622 1.1684)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_DIP_x01_0_1"
+				(rectangle
+					(start -3.81 2.54)
+					(end 3.81 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SW_DIP_x01_1_1"
+				(pin passive line
+					(at -7.62 0 0)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+9V"
 			(power)
 			(pin_numbers
@@ -3093,6 +3251,16 @@
 		)
 		(uuid 495fac69-33af-44d2-9ddf-aaf62673dba3)
 	)
+	(text "PAD"
+		(exclude_from_sim no)
+		(at 113.538 142.748 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "115fa1da-262a-4f1e-b9ea-b6ce43eec29a")
+	)
 	(text "POLE 1"
 		(exclude_from_sim no)
 		(at 86.614 168.402 90)
@@ -3139,7 +3307,7 @@
 	)
 	(text "WET"
 		(exclude_from_sim no)
-		(at 168.402 116.84 0)
+		(at 168.402 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3159,7 +3327,7 @@
 	)
 	(text "DRY"
 		(exclude_from_sim no)
-		(at 168.91 127.254 0)
+		(at 168.91 132.334 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3169,7 +3337,7 @@
 	)
 	(text "MIX"
 		(exclude_from_sim no)
-		(at 161.798 118.364 0)
+		(at 161.798 123.444 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3431,25 +3599,19 @@
 		(uuid "eaa53b5f-a982-4c08-976f-a7b3518ed86a")
 	)
 	(junction
-		(at 210.82 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0880898b-b278-4526-bcb9-5fc3ca5e418f")
-	)
-	(junction
-		(at 156.21 171.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "131e00fa-47f4-4e2e-a196-eed0fa5490e3")
-	)
-	(junction
-		(at 190.5 123.19)
+		(at 190.5 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "16308a6b-e76a-4d5c-8e61-c7067a22fd51")
 	)
 	(junction
-		(at 166.37 110.49)
+		(at 107.95 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a1ff0dc-e6a7-42f7-b185-df9cd44b0bdc")
+	)
+	(junction
+		(at 166.37 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1c8b373c-5f6f-4bae-8a30-987d5cdbdf5f")
@@ -3459,6 +3621,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "263cb827-4413-42c2-b631-d427c2976470")
+	)
+	(junction
+		(at 123.19 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26ccabeb-cbf7-4691-8e0b-89069e2b8b8f")
+	)
+	(junction
+		(at 128.27 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e43effd-bba4-477a-925d-7f6f7abf482a")
 	)
 	(junction
 		(at 97.79 113.03)
@@ -3473,16 +3647,10 @@
 		(uuid "449d43d7-c53c-4da2-9ba3-539b4a0ba0b6")
 	)
 	(junction
-		(at 135.89 171.45)
+		(at 157.48 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "49831a9e-fe83-45cb-8a4c-a1337aef49bc")
-	)
-	(junction
-		(at 156.21 186.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4c5fcdfc-f682-4dc7-b58a-df6de0033fad")
+		(uuid "4717e20c-4ca0-485e-a15a-c2e5317dfb3f")
 	)
 	(junction
 		(at 95.25 43.18)
@@ -3491,13 +3659,25 @@
 		(uuid "70df70a1-40ce-45a3-9d84-6ee23220d875")
 	)
 	(junction
+		(at 210.82 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79fc98bb-e462-4214-93a3-a1ad2de045ac")
+	)
+	(junction
+		(at 135.89 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c61b2cd-8f30-47d2-acd7-4462fb85d123")
+	)
+	(junction
 		(at 140.97 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "898ff3aa-04e8-4646-bdbd-23869ad686bd")
 	)
 	(junction
-		(at 190.5 110.49)
+		(at 190.5 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9611debd-c50d-4075-8093-38fd13949b80")
@@ -3509,10 +3689,10 @@
 		(uuid "993088c4-3f96-436e-a673-42287cc1cbe5")
 	)
 	(junction
-		(at 135.89 186.69)
+		(at 135.89 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b0a3978d-45e1-4f78-99ed-b5c5c20540ae")
+		(uuid "b33f9658-5e2a-4f55-ad02-9df718fb8bad")
 	)
 	(junction
 		(at 140.97 186.69)
@@ -3521,25 +3701,31 @@
 		(uuid "b3c44d19-af43-4b44-be1d-3395830bcb1f")
 	)
 	(junction
+		(at 135.89 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4c288d9-b427-4065-84cd-5144ecd9fde1")
+	)
+	(junction
+		(at 157.48 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b5042309-f9be-4198-aabb-feddbabd78ce")
+	)
+	(junction
 		(at 107.95 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ba4b38bd-bef0-4481-9f41-13f0d86a26c3")
 	)
 	(junction
-		(at 128.27 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bedcaff5-a209-49b0-bce3-98c253de6e8f")
-	)
-	(junction
-		(at 234.95 125.73)
+		(at 234.95 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c69f10fa-3a2b-4427-9013-411a6b48651e")
 	)
 	(junction
-		(at 166.37 135.89)
+		(at 166.37 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c86841c0-31da-4b24-bb7b-5952f0e163fa")
@@ -3549,12 +3735,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cdc6f265-db5e-4e38-93be-c06190b18c92")
-	)
-	(junction
-		(at 135.89 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d4f6a805-55a3-4728-b780-064802aa5012")
 	)
 	(junction
 		(at 95.25 30.48)
@@ -3580,7 +3760,17 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 110.49) (xy 190.5 110.49)
+			(xy 97.79 113.03) (xy 107.95 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01b59e71-1598-4cf1-ae6e-1218f16b0984")
+	)
+	(wire
+		(pts
+			(xy 185.42 115.57) (xy 190.5 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3600,7 +3790,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 110.49) (xy 160.02 110.49)
+			(xy 166.37 115.57) (xy 160.02 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3630,7 +3820,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 123.19) (xy 173.99 121.92)
+			(xy 173.99 128.27) (xy 173.99 127)
 		)
 		(stroke
 			(width 0)
@@ -3670,7 +3860,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 125.73) (xy 231.14 125.73)
+			(xy 234.95 130.81) (xy 231.14 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3690,7 +3880,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 110.49) (xy 210.82 125.73)
+			(xy 210.82 115.57) (xy 210.82 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3800,6 +3990,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 128.27) (xy 107.95 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a23f5f9-5ba4-4f06-bdd8-fc6f498fbdfb")
+	)
+	(wire
+		(pts
 			(xy 46.99 50.8) (xy 46.99 33.02)
 		)
 		(stroke
@@ -3830,7 +4030,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 110.49) (xy 177.8 110.49)
+			(xy 166.37 115.57) (xy 177.8 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3850,7 +4050,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 135.89) (xy 132.08 135.89)
+			(xy 128.27 140.97) (xy 132.08 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3870,7 +4070,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 110.49) (xy 128.27 135.89)
+			(xy 128.27 115.57) (xy 128.27 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3880,17 +4080,17 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 96.52) (xy 128.27 110.49)
+			(xy 123.19 128.27) (xy 119.38 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "61b797b3-428c-4cee-b18d-0bcc94952262")
+		(uuid "6043e795-37d3-4901-a96b-1fb7aa76d07e")
 	)
 	(wire
 		(pts
-			(xy 220.98 125.73) (xy 223.52 125.73)
+			(xy 220.98 130.81) (xy 223.52 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3910,7 +4110,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 121.92) (xy 170.18 121.92)
+			(xy 173.99 127) (xy 170.18 127)
 		)
 		(stroke
 			(width 0)
@@ -3930,7 +4130,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 129.54) (xy 234.95 125.73)
+			(xy 234.95 134.62) (xy 234.95 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3960,6 +4160,26 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 171.45) (xy 163.83 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70081492-bf9e-4cfe-86f5-970509fa98c9")
+	)
+	(wire
+		(pts
+			(xy 107.95 118.11) (xy 107.95 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75b1f7f0-e8c1-479f-af39-681afe31b271")
+	)
+	(wire
+		(pts
 			(xy 132.08 186.69) (xy 135.89 186.69)
 		)
 		(stroke
@@ -3970,27 +4190,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 96.52) (xy 128.27 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a405fb2-40c2-4ab9-9e0a-0947bf87fa06")
-	)
-	(wire
-		(pts
-			(xy 163.83 171.45) (xy 156.21 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86456c4c-ae2e-48f1-b189-2bd296708147")
-	)
-	(wire
-		(pts
-			(xy 234.95 82.55) (xy 234.95 125.73)
+			(xy 234.95 82.55) (xy 234.95 130.81)
 		)
 		(stroke
 			(width 0)
@@ -4000,7 +4200,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 123.19) (xy 195.58 123.19)
+			(xy 190.5 128.27) (xy 195.58 128.27)
 		)
 		(stroke
 			(width 0)
@@ -4030,7 +4230,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 135.89) (xy 177.8 135.89)
+			(xy 166.37 140.97) (xy 177.8 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4040,17 +4240,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 186.69) (xy 156.21 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96986e0e-59c3-4297-af14-7e5a70bad399")
-	)
-	(wire
-		(pts
-			(xy 190.5 110.49) (xy 198.12 110.49)
+			(xy 190.5 115.57) (xy 198.12 115.57)
 		)
 		(stroke
 			(width 0)
@@ -4070,7 +4260,17 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 135.89) (xy 160.02 135.89)
+			(xy 107.95 128.27) (xy 111.76 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ca2fdcc-d745-4115-bf60-8707f5d01239")
+	)
+	(wire
+		(pts
+			(xy 166.37 140.97) (xy 160.02 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4090,7 +4290,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 137.16) (xy 234.95 138.43)
+			(xy 234.95 142.24) (xy 234.95 143.51)
 		)
 		(stroke
 			(width 0)
@@ -4130,7 +4330,17 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 125.73) (xy 213.36 125.73)
+			(xy 135.89 171.45) (xy 140.97 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a51597bd-a7e6-479b-affe-c3282c885c34")
+	)
+	(wire
+		(pts
+			(xy 210.82 130.81) (xy 213.36 130.81)
 		)
 		(stroke
 			(width 0)
@@ -4150,13 +4360,13 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 107.95) (xy 113.03 96.52)
+			(xy 123.19 115.57) (xy 128.27 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b3966410-ccf3-42be-b93e-2427520ab531")
+		(uuid "ac22aedb-78c8-42b7-8a2c-89ee24d72d6f")
 	)
 	(wire
 		(pts
@@ -4170,7 +4380,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 118.11) (xy 166.37 110.49)
+			(xy 166.37 123.19) (xy 166.37 115.57)
 		)
 		(stroke
 			(width 0)
@@ -4180,23 +4390,23 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 113.03) (xy 97.79 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd0c43bb-8555-4a60-86c1-ab85cb1f65d1")
-	)
-	(wire
-		(pts
-			(xy 166.37 125.73) (xy 166.37 135.89)
+			(xy 166.37 130.81) (xy 166.37 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "bd5991b1-6025-4516-9382-4d7af061344a")
+	)
+	(wire
+		(pts
+			(xy 123.19 115.57) (xy 123.19 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bde7c9c5-edcb-4361-9821-7c613f1a8de7")
 	)
 	(wire
 		(pts
@@ -4240,6 +4450,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 186.69) (xy 140.97 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0d04d66-27ec-49bc-8689-74e1fc2e9186")
+	)
+	(wire
+		(pts
 			(xy 69.85 133.35) (xy 69.85 129.54)
 		)
 		(stroke
@@ -4260,7 +4480,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 186.69) (xy 156.21 186.69)
+			(xy 140.97 186.69) (xy 157.48 186.69)
 		)
 		(stroke
 			(width 0)
@@ -4340,16 +4560,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 186.69) (xy 140.97 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e11608a7-e61f-4059-9f64-763b219e66fd")
-	)
-	(wire
-		(pts
 			(xy 97.79 113.03) (xy 97.79 116.84)
 		)
 		(stroke
@@ -4380,7 +4590,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 110.49) (xy 190.5 123.19)
+			(xy 190.5 115.57) (xy 190.5 128.27)
 		)
 		(stroke
 			(width 0)
@@ -4390,7 +4600,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 123.19) (xy 190.5 135.89)
+			(xy 190.5 128.27) (xy 190.5 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4400,7 +4610,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 135.89) (xy 190.5 135.89)
+			(xy 185.42 140.97) (xy 190.5 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4410,13 +4620,23 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 110.49) (xy 210.82 110.49)
+			(xy 205.74 115.57) (xy 210.82 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "eba78762-78e0-47d2-8955-a0fddd9c53ee")
+	)
+	(wire
+		(pts
+			(xy 157.48 186.69) (xy 163.83 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f21c37eb-7670-4ae8-bd3c-51f0ea25d8dd")
 	)
 	(wire
 		(pts
@@ -4430,7 +4650,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 135.89) (xy 152.4 135.89)
+			(xy 148.59 140.97) (xy 152.4 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4450,7 +4670,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 110.49) (xy 152.4 110.49)
+			(xy 128.27 115.57) (xy 152.4 115.57)
 		)
 		(stroke
 			(width 0)
@@ -4470,7 +4690,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 171.45) (xy 156.21 171.45)
+			(xy 140.97 171.45) (xy 157.48 171.45)
 		)
 		(stroke
 			(width 0)
@@ -4487,16 +4707,6 @@
 			(type default)
 		)
 		(uuid "fb47a7f6-b5a2-4029-a255-a872ea717e52")
-	)
-	(wire
-		(pts
-			(xy 135.89 171.45) (xy 140.97 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ffe0f683-578c-470c-8518-4ceed1c3b822")
 	)
 	(table
 		(column_count 3)
@@ -5078,7 +5288,7 @@
 		(uuid "a91442a8-1490-4e77-8261-6ef83b32514d")
 	)
 	(label "input_buf"
-		(at 119.38 96.52 0)
+		(at 137.16 115.57 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5152,6 +5362,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 140.97 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 140.97 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL21B104KCFNNNE"
+			(at 140.97 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C28233 "
+			(at 140.97 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "afa2ec01-1f50-4f5c-9e94-66253cad1598")
 		)
@@ -5169,7 +5415,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 234.95 138.43 0)
+		(at 234.95 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5178,7 +5424,7 @@
 		(fields_autoplaced yes)
 		(uuid "07c6e1f3-ff75-43f6-9e1c-13510c1cb4d5")
 		(property "Reference" "#PWR017"
-			(at 234.95 144.78 0)
+			(at 234.95 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5187,7 +5433,7 @@
 			)
 		)
 		(property "Value" "JGND"
-			(at 234.95 143.51 0)
+			(at 234.95 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5195,7 +5441,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 138.43 0)
+			(at 234.95 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5204,7 +5450,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 234.95 138.43 0)
+			(at 234.95 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5213,7 +5459,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 234.95 138.43 0)
+			(at 234.95 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5300,131 +5546,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:TL074")
-		(at 120.65 110.49 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0b4b7a10-6ed3-4120-90fa-e8b629d6130a")
-		(property "Reference" "U1"
-			(at 120.65 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL074H"
-			(at 120.65 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 119.38 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 121.92 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 120.65 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 120.65 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "TL074HIDR"
-			(at 120.65 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de4")
-		)
-		(pin "5"
-			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb857")
-		)
-		(pin "6"
-			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b3")
-		)
-		(pin "7"
-			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba4")
-		)
-		(pin "9"
-			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd1")
-		)
-		(pin "14"
-			(uuid "7489c404-1898-4072-af4e-0a6107f137de")
-		)
-		(pin "11"
-			(uuid "f3d96ae9-8914-403b-850b-24c260c7532f")
-		)
-		(pin "10"
-			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f1")
-		)
-		(pin "8"
-			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc1")
-		)
-		(pin "13"
-			(uuid "92983320-fd71-4067-8980-d3fccacc08cf")
-		)
-		(pin "4"
-			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eeeff")
-		)
-		(pin "3"
-			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb89")
-		)
-		(pin "2"
-			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2261")
-		)
-		(pin "1"
-			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c3")
-		)
-		(instances
-			(project ""
-				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
-		(at 201.93 110.49 90)
+		(at 201.93 115.57 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5433,15 +5556,15 @@
 		(fields_autoplaced yes)
 		(uuid "1572cb09-6e66-47e2-9220-278f1c80c939")
 		(property "Reference" "R20"
-			(at 201.93 104.14 90)
+			(at 201.93 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "100k"
-			(at 201.93 106.68 90)
+		(property "Value" "10k"
+			(at 201.93 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5449,7 +5572,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 202.184 109.474 90)
+			(at 202.184 114.554 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5458,7 +5581,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 110.49 0)
+			(at 201.93 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5467,7 +5590,43 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 201.93 110.49 0)
+			(at 201.93 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 201.93 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 201.93 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1002T5E"
+			(at 201.93 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17414 "
+			(at 201.93 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5536,6 +5695,42 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 88.9 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 88.9 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 88.9 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRM21BZ71E106KE15L"
+			(at 88.9 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C237493 "
+			(at 88.9 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5625,8 +5820,149 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:TL074")
+		(at 203.2 130.81 0)
+		(mirror x)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2247ce21-9fd2-4c58-980a-db8cf19643f3")
+		(property "Reference" "U1"
+			(at 203.2 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL074H"
+			(at 203.2 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 201.93 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 204.47 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
+			(at 203.2 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 203.2 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "TL074HIDR"
+			(at 203.2 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 203.2 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C2878713 "
+			(at 203.2 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de6")
+		)
+		(pin "5"
+			(uuid "e26ae229-25fa-42ec-87ff-ebb293b037de")
+		)
+		(pin "6"
+			(uuid "e87d2839-8909-41d3-9e1a-fbaa2d40de11")
+		)
+		(pin "7"
+			(uuid "c7c42e65-827f-4d6b-b3cc-61799dc19d71")
+		)
+		(pin "9"
+			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd4")
+		)
+		(pin "14"
+			(uuid "7489c404-1898-4072-af4e-0a6107f137e0")
+		)
+		(pin "11"
+			(uuid "f3d96ae9-8914-403b-850b-24c260c75331")
+		)
+		(pin "10"
+			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f4")
+		)
+		(pin "8"
+			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc4")
+		)
+		(pin "13"
+			(uuid "92983320-fd71-4067-8980-d3fccacc08d1")
+		)
+		(pin "4"
+			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eef01")
+		)
+		(pin "3"
+			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8c")
+		)
+		(pin "2"
+			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2264")
+		)
+		(pin "1"
+			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c6")
+		)
+		(instances
+			(project "OCD"
+				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
+					(reference "U1")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
-		(at 181.61 135.89 90)
+		(at 181.61 140.97 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5634,7 +5970,7 @@
 		(dnp no)
 		(uuid "26636322-162c-442c-8eb6-b9993ddd0e55")
 		(property "Reference" "R18"
-			(at 181.61 129.54 90)
+			(at 181.61 134.62 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5642,7 +5978,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 181.61 132.08 90)
+			(at 181.61 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5650,7 +5986,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 181.864 134.874 90)
+			(at 181.864 139.954 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5659,7 +5995,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 181.61 135.89 0)
+			(at 181.61 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5668,7 +6004,43 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 181.61 135.89 0)
+			(at 181.61 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 181.61 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 181.61 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1002T5E"
+			(at 181.61 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17414 "
+			(at 181.61 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5824,132 +6196,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:TL074")
-		(at 158.75 179.07 0)
-		(mirror x)
-		(unit 5)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3150dc7a-cab4-436d-8e0b-a7e11f5ee079")
-		(property "Reference" "U2"
-			(at 161.29 167.386 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TL074H"
-			(at 161.29 169.926 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 157.48 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 160.02 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 158.75 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 158.75 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "TL074HIDR"
-			(at 158.75 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de5")
-		)
-		(pin "5"
-			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb858")
-		)
-		(pin "6"
-			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b4")
-		)
-		(pin "7"
-			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba5")
-		)
-		(pin "9"
-			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd2")
-		)
-		(pin "14"
-			(uuid "7489c404-1898-4072-af4e-0a6107f137df")
-		)
-		(pin "11"
-			(uuid "005fc8bd-4df9-428a-8a94-e8d48e25f134")
-		)
-		(pin "10"
-			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f2")
-		)
-		(pin "8"
-			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc2")
-		)
-		(pin "13"
-			(uuid "92983320-fd71-4067-8980-d3fccacc08d0")
-		)
-		(pin "4"
-			(uuid "79d6f74e-dddb-4164-b06a-dd03a809bd74")
-		)
-		(pin "3"
-			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8a")
-		)
-		(pin "2"
-			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2262")
-		)
-		(pin "1"
-			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c4")
-		)
-		(instances
-			(project "OCD"
-				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
-					(reference "U2")
-					(unit 5)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
-		(at 217.17 125.73 90)
+		(at 217.17 130.81 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5958,7 +6206,7 @@
 		(fields_autoplaced yes)
 		(uuid "34874d60-44f0-43b0-ba00-083870bfb168")
 		(property "Reference" "R21"
-			(at 217.17 119.38 90)
+			(at 217.17 124.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5966,7 +6214,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 217.17 121.92 90)
+			(at 217.17 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5974,7 +6222,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 217.424 124.714 90)
+			(at 217.424 129.794 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5983,7 +6231,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 217.17 125.73 0)
+			(at 217.17 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5992,7 +6240,43 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 217.17 125.73 0)
+			(at 217.17 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 217.17 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 217.17 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1000T5E"
+			(at 217.17 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17408 "
+			(at 217.17 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6070,6 +6354,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 97.79 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 97.79 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1003T5E"
+			(at 97.79 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C149504 "
+			(at 97.79 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "53abc888-0e17-402b-a787-8f9220910677")
 		)
@@ -6086,131 +6406,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:TL074")
-		(at 203.2 125.73 0)
-		(mirror x)
-		(unit 4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "358871b3-2808-4373-a15f-054691e011ba")
-		(property "Reference" "U1"
-			(at 203.2 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL074H"
-			(at 203.2 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 201.93 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 204.47 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 203.2 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 203.2 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "TL074HIDR"
-			(at 203.2 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "8bc3388f-9e93-4806-8ca2-a21d6d54b383")
-		)
-		(pin "5"
-			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb859")
-		)
-		(pin "6"
-			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b5")
-		)
-		(pin "7"
-			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba6")
-		)
-		(pin "9"
-			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd3")
-		)
-		(pin "14"
-			(uuid "92bede32-481f-40df-87ce-cfb33cb0ffac")
-		)
-		(pin "11"
-			(uuid "f3d96ae9-8914-403b-850b-24c260c75330")
-		)
-		(pin "10"
-			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f3")
-		)
-		(pin "8"
-			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc3")
-		)
-		(pin "13"
-			(uuid "309e5411-7726-4ac0-8d27-9a9c971aaa02")
-		)
-		(pin "4"
-			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eef00")
-		)
-		(pin "3"
-			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8b")
-		)
-		(pin "2"
-			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2263")
-		)
-		(pin "1"
-			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c5")
-		)
-		(instances
-			(project "OCD"
-				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
-					(reference "U1")
-					(unit 4)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
-		(at 156.21 135.89 90)
+		(at 156.21 140.97 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6218,7 +6415,7 @@
 		(dnp no)
 		(uuid "3aed8212-7ad9-4294-ba9c-2988e2256ed8")
 		(property "Reference" "R16"
-			(at 156.21 129.54 90)
+			(at 156.21 134.62 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6226,7 +6423,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 156.21 132.08 90)
+			(at 156.21 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6234,7 +6431,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 156.464 134.874 90)
+			(at 156.464 139.954 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6243,7 +6440,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 156.21 135.89 0)
+			(at 156.21 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6252,7 +6449,43 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 156.21 135.89 0)
+			(at 156.21 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 156.21 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 156.21 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1002T5E"
+			(at 156.21 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17414 "
+			(at 156.21 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6330,6 +6563,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 67.31 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 67.31 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1001T5E"
+			(at 67.31 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17513 "
+			(at 67.31 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "48856236-8530-4f55-800a-4631ede04afe")
 		)
@@ -6347,7 +6616,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 173.99 123.19 0)
+		(at 173.99 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6356,7 +6625,7 @@
 		(fields_autoplaced yes)
 		(uuid "5568ab0d-97c3-4d62-a97e-d3d004c2504a")
 		(property "Reference" "#PWR015"
-			(at 173.99 129.54 0)
+			(at 173.99 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6365,7 +6634,7 @@
 			)
 		)
 		(property "Value" "VGND"
-			(at 173.99 128.27 0)
+			(at 173.99 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6373,7 +6642,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 123.19 0)
+			(at 173.99 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6382,7 +6651,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 123.19 0)
+			(at 173.99 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6391,7 +6660,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 173.99 123.19 0)
+			(at 173.99 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6407,6 +6676,148 @@
 				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
 					(reference "#PWR015")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL074")
+		(at 133.35 179.07 0)
+		(mirror y)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5ddd699f-1144-4427-a0ae-f2728dba7231")
+		(property "Reference" "U1"
+			(at 134.366 169.418 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TL074H"
+			(at 134.366 166.878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 134.62 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 132.08 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
+			(at 133.35 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 133.35 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "TL074HIDR"
+			(at 133.35 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 133.35 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C2878713 "
+			(at 133.35 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de7")
+		)
+		(pin "5"
+			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb85b")
+		)
+		(pin "6"
+			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b7")
+		)
+		(pin "7"
+			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba8")
+		)
+		(pin "9"
+			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd5")
+		)
+		(pin "14"
+			(uuid "7489c404-1898-4072-af4e-0a6107f137e1")
+		)
+		(pin "11"
+			(uuid "b08e656a-3413-400e-9a08-f6feaf529048")
+		)
+		(pin "10"
+			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f5")
+		)
+		(pin "8"
+			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc5")
+		)
+		(pin "13"
+			(uuid "92983320-fd71-4067-8980-d3fccacc08d2")
+		)
+		(pin "4"
+			(uuid "5ac2c8fd-c865-4f87-89d3-07ec7ac70b9f")
+		)
+		(pin "3"
+			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8d")
+		)
+		(pin "2"
+			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2265")
+		)
+		(pin "1"
+			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c7")
+		)
+		(instances
+			(project "OCD"
+				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
+					(reference "U1")
+					(unit 5)
 				)
 			)
 		)
@@ -6513,6 +6924,112 @@
 			(project "OCD"
 				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DIP_x01")
+		(at 107.95 146.05 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67f7f5f4-d399-473f-8498-bc6160624527")
+		(property "Reference" "SW2"
+			(at 111.76 144.7799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW_DIP_x01"
+			(at 111.76 147.3199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile"
+			(at 107.95 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588893234282582016"
+			(at 107.95 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
+			(at 107.95 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "DongGuan KINGTEK Industrial Co.,LTD "
+			(at 107.95 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "DSIC01LSGET"
+			(at 107.95 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 107.95 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C54948"
+			(at 107.95 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "62f24633-2033-4a62-873e-65a28c99d5ae")
+		)
+		(pin "2"
+			(uuid "3377aedf-100c-4aff-9129-9afb9a9fcfcc")
+		)
+		(instances
+			(project ""
+				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -6639,6 +7156,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 163.83 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 163.83 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL21B104KCFNNNE"
+			(at 163.83 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C28233 "
+			(at 163.83 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "46777a0f-7b7f-42e7-8316-187b93795fce")
 		)
@@ -6718,7 +7271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" " PBS24302"
+		(property "Part Number" " PBS-24-302-N2 Red/Green LED "
 			(at 69.85 124.46 0)
 			(effects
 				(font
@@ -6736,7 +7289,7 @@
 				(hide yes)
 			)
 		)
-		(property "SKU" "A-331"
+		(property "SKU" " A-1784 "
 			(at 69.85 124.46 0)
 			(effects
 				(font
@@ -6848,6 +7401,145 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:TL074")
+		(at 115.57 115.57 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7996dff0-039c-41dc-89aa-a87c234baae8")
+		(property "Reference" "U1"
+			(at 115.57 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL074H"
+			(at 115.57 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 114.3 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 116.84 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "TL074HIDR"
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C2878713 "
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de6")
+		)
+		(pin "5"
+			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb859")
+		)
+		(pin "6"
+			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b5")
+		)
+		(pin "7"
+			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba6")
+		)
+		(pin "9"
+			(uuid "65d2daf2-642a-4f49-bfe0-0a26da788020")
+		)
+		(pin "14"
+			(uuid "7489c404-1898-4072-af4e-0a6107f137e0")
+		)
+		(pin "11"
+			(uuid "f3d96ae9-8914-403b-850b-24c260c75332")
+		)
+		(pin "10"
+			(uuid "dad28340-13df-4545-b04a-2f27bbfd1eb2")
+		)
+		(pin "8"
+			(uuid "7393d954-c1a1-45ca-a898-6c71d1825b90")
+		)
+		(pin "13"
+			(uuid "92983320-fd71-4067-8980-d3fccacc08d1")
+		)
+		(pin "4"
+			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eef02")
+		)
+		(pin "3"
+			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8b")
+		)
+		(pin "2"
+			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2263")
+		)
+		(pin "1"
+			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c5")
+		)
+		(instances
+			(project "OCD"
+				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
+					(reference "U1")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+9V")
 		(at 95.25 29.21 0)
 		(unit 1)
@@ -6914,131 +7606,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:TL074")
-		(at 128.27 40.64 0)
-		(mirror x)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7f641f9b-5a7b-4fe4-9630-1ae70e93967b")
-		(property "Reference" "U1"
-			(at 128.27 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL074H"
-			(at 128.27 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 127 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 129.54 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 128.27 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 128.27 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "TL074HIDR"
-			(at 128.27 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de6")
-		)
-		(pin "5"
-			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb85a")
-		)
-		(pin "6"
-			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b6")
-		)
-		(pin "7"
-			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba7")
-		)
-		(pin "9"
-			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd4")
-		)
-		(pin "14"
-			(uuid "7489c404-1898-4072-af4e-0a6107f137e0")
-		)
-		(pin "11"
-			(uuid "f3d96ae9-8914-403b-850b-24c260c75331")
-		)
-		(pin "10"
-			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f4")
-		)
-		(pin "8"
-			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc4")
-		)
-		(pin "13"
-			(uuid "92983320-fd71-4067-8980-d3fccacc08d1")
-		)
-		(pin "4"
-			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eef01")
-		)
-		(pin "3"
-			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8c")
-		)
-		(pin "2"
-			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2264")
-		)
-		(pin "1"
-			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c6")
-		)
-		(instances
-			(project ""
-				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
-					(reference "U1")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
-		(at 156.21 110.49 90)
+		(at 156.21 115.57 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7046,7 +7615,7 @@
 		(dnp no)
 		(uuid "843c28c5-43d6-4c93-902b-bb4b6b038ba6")
 		(property "Reference" "R17"
-			(at 156.21 104.14 90)
+			(at 156.21 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7054,7 +7623,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 156.21 106.68 90)
+			(at 156.21 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7062,7 +7631,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 156.464 109.474 90)
+			(at 156.464 114.554 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7071,7 +7640,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 156.21 110.49 0)
+			(at 156.21 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7080,7 +7649,43 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 156.21 110.49 0)
+			(at 156.21 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 156.21 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 156.21 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1002T5E"
+			(at 156.21 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17414 "
+			(at 156.21 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7170,130 +7775,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:TL074")
-		(at 138.43 179.07 0)
-		(mirror x)
-		(unit 5)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "88aefab5-2c2d-49aa-a744-fdbb5b8aaec3")
-		(property "Reference" "U1"
-			(at 140.97 167.386 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TL074H"
-			(at 140.97 169.926 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 137.16 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 139.7 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 138.43 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 138.43 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "TL074HIDR"
-			(at 138.43 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de7")
-		)
-		(pin "5"
-			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb85b")
-		)
-		(pin "6"
-			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b7")
-		)
-		(pin "7"
-			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba8")
-		)
-		(pin "9"
-			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd5")
-		)
-		(pin "14"
-			(uuid "7489c404-1898-4072-af4e-0a6107f137e1")
-		)
-		(pin "11"
-			(uuid "f3d96ae9-8914-403b-850b-24c260c75332")
-		)
-		(pin "10"
-			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f5")
-		)
-		(pin "8"
-			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc5")
-		)
-		(pin "13"
-			(uuid "92983320-fd71-4067-8980-d3fccacc08d2")
-		)
-		(pin "4"
-			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eef02")
-		)
-		(pin "3"
-			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8d")
-		)
-		(pin "2"
-			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2265")
-		)
-		(pin "1"
-			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c7")
-		)
-		(instances
-			(project ""
-				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
-					(reference "U1")
-					(unit 5)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 95.25 38.1 0)
 		(unit 1)
@@ -7340,6 +7821,42 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 95.25 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 95.25 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 95.25 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1003T5E"
+			(at 95.25 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C149504 "
 			(at 95.25 38.1 0)
 			(effects
 				(font
@@ -7430,6 +7947,251 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:TL074")
+		(at 128.27 40.64 0)
+		(mirror x)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0931472-0fd2-4fb2-888f-cce9cfd034c1")
+		(property "Reference" "U1"
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL074H"
+			(at 128.27 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 127 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 129.54 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
+			(at 128.27 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 128.27 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "TL074HIDR"
+			(at 128.27 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 128.27 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C2878713 "
+			(at 128.27 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "523e5ebf-3335-4e95-b8de-1cf8aeb0ff6c")
+		)
+		(pin "5"
+			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb859")
+		)
+		(pin "6"
+			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b5")
+		)
+		(pin "7"
+			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba6")
+		)
+		(pin "9"
+			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd3")
+		)
+		(pin "14"
+			(uuid "65470faa-f356-45c9-b74a-94c3916750f5")
+		)
+		(pin "11"
+			(uuid "f3d96ae9-8914-403b-850b-24c260c75330")
+		)
+		(pin "10"
+			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f3")
+		)
+		(pin "8"
+			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc3")
+		)
+		(pin "13"
+			(uuid "aadaab62-3824-4936-bfbb-bb29451f9fe5")
+		)
+		(pin "4"
+			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eef00")
+		)
+		(pin "3"
+			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8b")
+		)
+		(pin "2"
+			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2263")
+		)
+		(pin "1"
+			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c5")
+		)
+		(instances
+			(project "OCD"
+				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
+					(reference "U1")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 115.57 128.27 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a52c0573-dab9-482a-a464-ca65de5a2a87")
+		(property "Reference" "R32"
+			(at 115.57 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 115.57 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 115.824 127.254 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 115.57 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 115.57 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 115.57 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1003T5E"
+			(at 115.57 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C149504 "
+			(at 115.57 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d313fcf6-610e-427a-88f1-a95cbddeddad")
+		)
+		(pin "1"
+			(uuid "47d4e935-58d4-4ec5-bc83-dd5c8b9204b1")
+		)
+		(instances
+			(project "OCD"
+				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:Earth")
 		(at 107.95 54.61 0)
 		(unit 1)
@@ -7497,7 +8259,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 181.61 110.49 90)
+		(at 181.61 115.57 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7505,15 +8267,15 @@
 		(dnp no)
 		(uuid "a651e0f6-3913-4925-9f30-97aef2e6d0fe")
 		(property "Reference" "R19"
-			(at 181.61 104.14 90)
+			(at 181.61 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "47k"
-			(at 181.61 106.68 90)
+		(property "Value" "10k"
+			(at 181.61 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7521,7 +8283,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 181.864 109.474 90)
+			(at 181.864 114.554 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7530,7 +8292,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 181.61 110.49 0)
+			(at 181.61 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7539,7 +8301,43 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 181.61 110.49 0)
+			(at 181.61 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 181.61 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 181.61 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1002T5E"
+			(at 181.61 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17414 "
+			(at 181.61 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7564,7 +8362,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 234.95 133.35 180)
+		(at 234.95 138.43 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7573,7 +8371,7 @@
 		(fields_autoplaced yes)
 		(uuid "af16b3af-49ea-4872-817a-65d0663430e0")
 		(property "Reference" "R22"
-			(at 237.49 132.0799 0)
+			(at 237.49 137.1599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7582,7 +8380,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 237.49 134.6199 0)
+			(at 237.49 139.6999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7591,7 +8389,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 233.934 133.096 90)
+			(at 233.934 138.176 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7600,7 +8398,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 234.95 133.35 0)
+			(at 234.95 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7609,7 +8407,43 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 234.95 133.35 0)
+			(at 234.95 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 234.95 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 234.95 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1002T5E"
+			(at 234.95 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17414 "
+			(at 234.95 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7687,6 +8521,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 95.25 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 95.25 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1003T5E"
+			(at 95.25 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C149504 "
+			(at 95.25 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "29eb1d56-4e0e-43ca-8463-01e6e77adb21")
 		)
@@ -7704,7 +8574,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 195.58 128.27 0)
+		(at 195.58 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7713,7 +8583,7 @@
 		(fields_autoplaced yes)
 		(uuid "b1227ff9-c4b2-4bfc-815f-bbbd89f5c28b")
 		(property "Reference" "#PWR016"
-			(at 195.58 134.62 0)
+			(at 195.58 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7722,7 +8592,7 @@
 			)
 		)
 		(property "Value" "VGND"
-			(at 195.58 133.35 0)
+			(at 195.58 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7730,7 +8600,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 195.58 128.27 0)
+			(at 195.58 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7739,7 +8609,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 128.27 0)
+			(at 195.58 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7748,7 +8618,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 195.58 128.27 0)
+			(at 195.58 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7770,7 +8640,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 227.33 125.73 90)
+		(at 227.33 130.81 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7779,7 +8649,7 @@
 		(fields_autoplaced yes)
 		(uuid "b2a2ec95-adb7-4298-9afe-af120ec104c7")
 		(property "Reference" "C6"
-			(at 227.33 118.11 90)
+			(at 227.33 123.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7787,7 +8657,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 227.33 120.65 90)
+			(at 227.33 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7795,7 +8665,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 231.14 124.7648 0)
+			(at 231.14 129.8448 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7804,7 +8674,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 227.33 125.73 0)
+			(at 227.33 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7813,7 +8683,43 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 227.33 125.73 0)
+			(at 227.33 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 227.33 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 227.33 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRM21BZ71E106KE15L"
+			(at 227.33 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C237493 "
+			(at 227.33 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7891,6 +8797,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 107.95 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 107.95 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL21B105KBFNNNE"
+			(at 107.95 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C28323 "
+			(at 107.95 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "48acbb04-bc85-466e-96d6-1e6ab5cf848b")
 		)
@@ -7902,6 +8844,148 @@
 				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
 					(reference "C3")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL074")
+		(at 154.94 179.07 0)
+		(mirror y)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b4b5d792-fa80-4691-ae87-2c80dc432daf")
+		(property "Reference" "U2"
+			(at 154.94 169.418 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TL074H"
+			(at 154.94 166.878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 156.21 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 153.67 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
+			(at 154.94 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 154.94 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "TL074HIDR"
+			(at 154.94 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 154.94 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C2878713 "
+			(at 154.94 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de5")
+		)
+		(pin "5"
+			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb858")
+		)
+		(pin "6"
+			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b4")
+		)
+		(pin "7"
+			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba5")
+		)
+		(pin "9"
+			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd2")
+		)
+		(pin "14"
+			(uuid "7489c404-1898-4072-af4e-0a6107f137df")
+		)
+		(pin "11"
+			(uuid "67a957b3-2e85-4d83-bda3-b42031ab0ad6")
+		)
+		(pin "10"
+			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f2")
+		)
+		(pin "8"
+			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc2")
+		)
+		(pin "13"
+			(uuid "92983320-fd71-4067-8980-d3fccacc08d0")
+		)
+		(pin "4"
+			(uuid "237a4488-1b7e-49a1-891e-2a3b2df45118")
+		)
+		(pin "3"
+			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8a")
+		)
+		(pin "2"
+			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2262")
+		)
+		(pin "1"
+			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c4")
+		)
+		(instances
+			(project "OCD"
+				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
+					(reference "U2")
+					(unit 5)
 				)
 			)
 		)
@@ -7967,6 +9051,72 @@
 			(project "OCD"
 				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 107.95 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b9907fb9-c91e-455c-9fb2-985712ea3dfd")
+		(property "Reference" "#PWR028"
+			(at 107.95 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VGND"
+			(at 107.95 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 107.95 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1bf4de60-0c14-453e-876d-f11d89d22100")
+		)
+		(instances
+			(project "OCD"
+				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -8244,6 +9394,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 77.47 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 77.47 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL21A226MAQNNNE"
+			(at 77.47 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C45783 "
+			(at 77.47 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8300d3ec-a03e-4586-bb1d-5f4211e59dbb")
 		)
@@ -8264,7 +9450,7 @@
 		(at 67.31 113.03 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -8307,6 +9493,42 @@
 		)
 		(property "Description" "Common 5mm diameter LED"
 			(at 67.31 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "TAYDA"
+			(at 67.31 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "PIC"
+			(at 67.31 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" " PBS-24-302-N2 Red/Green LED "
+			(at 67.31 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" " A-1784 "
+			(at 67.31 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8468,7 +9690,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributer" "Digi-Key"
+		(property "Distributer" "LCSC"
 			(at 62.23 36.83 0)
 			(effects
 				(font
@@ -8477,7 +9699,7 @@
 				(hide yes)
 			)
 		)
-		(property "SKU" "493-2278-2-ND"
+		(property "SKU" "C433299 "
 			(at 62.23 36.83 0)
 			(effects
 				(font
@@ -8679,7 +9901,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" " PBS24302"
+		(property "Part Number" " PBS-24-302-N2 Red/Green LED "
 			(at 71.12 80.01 0)
 			(effects
 				(font
@@ -8697,7 +9919,7 @@
 				(hide yes)
 			)
 		)
-		(property "SKU" "A-331"
+		(property "SKU" " A-1784 "
 			(at 71.12 80.01 0)
 			(effects
 				(font
@@ -8863,6 +10085,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 97.79 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 97.79 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1003T5E"
+			(at 97.79 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C149504 "
+			(at 97.79 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3d90b21b-6532-460a-aa7d-293f94d03137")
 		)
@@ -8945,6 +10203,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 107.95 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e3ced521-869e-45c7-a9e1-fd4d95a62261")
+		(property "Reference" "R33"
+			(at 112.014 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 112.014 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 108.966 134.874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 107.95 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 107.95 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 107.95 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1002T5E"
+			(at 107.95 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17414 "
+			(at 107.95 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f255f913-c446-4a3a-89b1-e4c4d6921958")
+		)
+		(pin "1"
+			(uuid "cb28ddcb-7d9b-4167-815d-47fc694ce0b9")
+		)
+		(instances
+			(project "OCD"
+				(path "/ec208522-e355-41c5-8297-e53350b7b90b"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Osprey_Symbols:SW_3PDT_x3")
 		(at 245.11 80.01 0)
 		(mirror y)
@@ -9006,7 +10367,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" " PBS24302"
+		(property "Part Number" " PBS-24-302-N2 Red/Green LED "
 			(at 245.11 80.01 0)
 			(effects
 				(font
@@ -9024,7 +10385,7 @@
 				(hide yes)
 			)
 		)
-		(property "SKU" "A-331"
+		(property "SKU" " A-1784 "
 			(at 245.11 80.01 0)
 			(effects
 				(font
@@ -9137,7 +10498,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Potentiometer_US")
-		(at 166.37 121.92 0)
+		(at 166.37 127 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9146,7 +10507,7 @@
 		(dnp no)
 		(uuid "f90d168b-90e5-44fb-9da1-f81a24064858")
 		(property "Reference" "RV1"
-			(at 163.83 123.1901 0)
+			(at 163.83 128.2701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9155,7 +10516,7 @@
 			)
 		)
 		(property "Value" "50k Lin"
-			(at 163.83 120.6501 0)
+			(at 163.83 125.7301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9164,7 +10525,7 @@
 			)
 		)
 		(property "Footprint" "Osprey_Footprints:RV16AF-41"
-			(at 166.37 121.92 0)
+			(at 166.37 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9173,7 +10534,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.taydaelectronics.com/datasheets/files/A-5419-1.pdf"
-			(at 166.37 121.92 0)
+			(at 166.37 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9182,7 +10543,7 @@
 			)
 		)
 		(property "Description" "TAYDA 50K OHM Linear Taper Potentiometer PCB Mount Round Shaft Dia: 6.35mm"
-			(at 166.37 121.92 0)
+			(at 166.37 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9191,7 +10552,7 @@
 			)
 		)
 		(property "Manufacturer" "ALPHA"
-			(at 166.37 121.92 0)
+			(at 166.37 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9200,7 +10561,7 @@
 			)
 		)
 		(property "Part Number" " RV16106NO-OS15A00-B50K-060C"
-			(at 166.37 121.92 0)
+			(at 166.37 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9209,7 +10570,7 @@
 			)
 		)
 		(property "Distributer" "TAYDA"
-			(at 166.37 121.92 0)
+			(at 166.37 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9218,7 +10579,7 @@
 			)
 		)
 		(property "SKU" "A-5524"
-			(at 166.37 121.92 0)
+			(at 166.37 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9245,7 +10606,7 @@
 		)
 	)
 	(sheet
-		(at 132.08 130.81)
+		(at 132.08 135.89)
 		(size 16.51 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9261,7 +10622,7 @@
 		)
 		(uuid "cf449087-5319-41a6-906c-b1896ac14578")
 		(property "Sheetname" "Clipper Circuit"
-			(at 132.08 130.0984 0)
+			(at 132.08 135.1784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9270,7 +10631,7 @@
 			)
 		)
 		(property "Sheetfile" "Clipper.kicad_sch"
-			(at 132.08 144.0946 0)
+			(at 132.08 149.1746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9279,7 +10640,7 @@
 			)
 		)
 		(pin "Input" input
-			(at 132.08 135.89 180)
+			(at 132.08 140.97 180)
 			(uuid "10ea8372-9219-44c2-9cb9-c5b3fd9270f6")
 			(effects
 				(font
@@ -9289,7 +10650,7 @@
 			)
 		)
 		(pin "Output" output
-			(at 148.59 135.89 0)
+			(at 148.59 140.97 0)
 			(uuid "88b8ea66-2292-4974-8c93-1dd9a87486bf")
 			(effects
 				(font

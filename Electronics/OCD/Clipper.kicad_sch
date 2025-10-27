@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "Over-Complicated Distortion (OCD)")
-		(date "2025-09-14")
-		(rev "A")
+		(date "2025-10-26")
+		(rev "B")
 		(company "Osprey Instruments")
 	)
 	(lib_symbols
@@ -1963,6 +1963,12 @@
 		(uuid "15f28a32-f302-41c3-8491-7295beaf772e")
 	)
 	(junction
+		(at 209.55 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a578bc5-8c29-4919-93ce-bd79d917df2d")
+	)
+	(junction
 		(at 332.74 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2011,6 +2017,12 @@
 		(uuid "39e399d3-754c-4082-a30b-e225a0c4d909")
 	)
 	(junction
+		(at 317.5 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "410d2eb4-5ee5-4718-b793-dfc859113afa")
+	)
+	(junction
 		(at 317.5 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2041,10 +2053,10 @@
 		(uuid "72cbb447-5b0a-4826-8eea-1c0debf3c45b")
 	)
 	(junction
-		(at 317.5 162.56)
+		(at 332.74 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "794c0b0a-047f-4c8c-beac-82fc40fe449f")
+		(uuid "872abd78-5d1c-4d9f-a480-fa1c942e3956")
 	)
 	(junction
 		(at 209.55 142.24)
@@ -2107,12 +2119,6 @@
 		(uuid "cce102de-4801-4efa-9eb1-74ca99a8bf46")
 	)
 	(junction
-		(at 332.74 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "de9c9755-98ed-4754-90b0-eef453d54bd6")
-	)
-	(junction
 		(at 298.45 162.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2122,13 +2128,7 @@
 		(at 138.43 157.48)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e47993e7-b82a-4a94-bb43-89a08fe641e7")
-	)
-	(junction
-		(at 236.22 160.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e98bd377-c2c9-46a7-a6aa-139521354810")
+		(uuid "e35f4ceb-77ee-486c-9035-559dca944dc1")
 	)
 	(junction
 		(at 190.5 142.24)
@@ -2137,10 +2137,10 @@
 		(uuid "f114f649-5d2a-4b1c-9b76-be92bab3e3b1")
 	)
 	(junction
-		(at 209.55 160.02)
+		(at 236.22 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f3106ccc-5865-47ae-889c-00d8559ff027")
+		(uuid "f29400d3-ebf7-4722-beea-852ff09ed76d")
 	)
 	(junction
 		(at 190.5 189.23)
@@ -3417,6 +3417,147 @@
 		(uuid "7facf450-9d65-49a2-a107-2e7b116af966")
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:TL074")
+		(at 130.81 157.48 0)
+		(mirror x)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0333d538-adf8-4a21-871c-6fc196ca94bc")
+		(property "Reference" "U2"
+			(at 130.81 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL074H"
+			(at 130.81 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 129.54 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 132.08 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
+			(at 130.81 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 130.81 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "TL074HIDR"
+			(at 130.81 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 130.81 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C2878713 "
+			(at 130.81 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de5")
+		)
+		(pin "5"
+			(uuid "a3fae5bb-b620-4d4a-88a4-34650965f7af")
+		)
+		(pin "6"
+			(uuid "c055a5a3-15cd-4fcc-b6c0-b985e680c367")
+		)
+		(pin "7"
+			(uuid "313f565f-f01a-4bbb-aa28-ee9a3a89906b")
+		)
+		(pin "9"
+			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd3")
+		)
+		(pin "14"
+			(uuid "7489c404-1898-4072-af4e-0a6107f137df")
+		)
+		(pin "11"
+			(uuid "f3d96ae9-8914-403b-850b-24c260c75331")
+		)
+		(pin "10"
+			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f3")
+		)
+		(pin "8"
+			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc3")
+		)
+		(pin "13"
+			(uuid "92983320-fd71-4067-8980-d3fccacc08d0")
+		)
+		(pin "4"
+			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eef01")
+		)
+		(pin "3"
+			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb89")
+		)
+		(pin "2"
+			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2261")
+		)
+		(pin "1"
+			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c3")
+		)
+		(instances
+			(project "OCD"
+				(path "/ec208522-e355-41c5-8297-e53350b7b90b/cf449087-5319-41a6-906c-b1896ac14578"
+					(reference "U2")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 281.94 191.77 0)
 		(unit 1)
@@ -3535,6 +3676,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 130.81 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 130.81 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1003T5E"
+			(at 130.81 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C149504 "
+			(at 130.81 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6133f522-70ba-4fbe-855e-e187761fe60c")
 		)
@@ -3546,6 +3723,146 @@
 				(path "/ec208522-e355-41c5-8297-e53350b7b90b/cf449087-5319-41a6-906c-b1896ac14578"
 					(reference "R10")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL074")
+		(at 201.93 160.02 0)
+		(mirror x)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "24f0e615-d38c-40a7-ad24-9c47345ea27c")
+		(property "Reference" "U2"
+			(at 201.93 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL074H"
+			(at 201.93 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 200.66 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 203.2 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
+			(at 201.93 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 201.93 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "TL074HIDR"
+			(at 201.93 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 201.93 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C2878713 "
+			(at 201.93 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de7")
+		)
+		(pin "5"
+			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb85a")
+		)
+		(pin "6"
+			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b6")
+		)
+		(pin "7"
+			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba7")
+		)
+		(pin "9"
+			(uuid "146200e3-5c22-4b64-9c73-b9150aeb14dd")
+		)
+		(pin "14"
+			(uuid "7489c404-1898-4072-af4e-0a6107f137e1")
+		)
+		(pin "11"
+			(uuid "f3d96ae9-8914-403b-850b-24c260c75333")
+		)
+		(pin "10"
+			(uuid "b8ec65bf-e4e7-4ae5-a0f6-c30ceb568b1f")
+		)
+		(pin "8"
+			(uuid "9bf78625-e550-4fb6-a65a-4f2da2b9e0bd")
+		)
+		(pin "13"
+			(uuid "92983320-fd71-4067-8980-d3fccacc08d2")
+		)
+		(pin "4"
+			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eef03")
+		)
+		(pin "3"
+			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8c")
+		)
+		(pin "2"
+			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2264")
+		)
+		(pin "1"
+			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c6")
+		)
+		(instances
+			(project "OCD"
+				(path "/ec208522-e355-41c5-8297-e53350b7b90b/cf449087-5319-41a6-906c-b1896ac14578"
+					(reference "U2")
+					(unit 3)
 				)
 			)
 		)
@@ -3597,6 +3914,42 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 298.45 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 298.45 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 298.45 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1002T5E"
+			(at 298.45 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17414 "
 			(at 298.45 185.42 0)
 			(effects
 				(font
@@ -3666,6 +4019,42 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 68.58 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 68.58 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 68.58 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1202T5E"
+			(at 68.58 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17444 "
+			(at 68.58 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3799,6 +4188,42 @@
 			)
 		)
 		(property "Description" "SOD-323 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 242.57 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 242.57 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ST(Semtech)"
+			(at 242.57 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "1N4148WS"
+			(at 242.57 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C57759 "
 			(at 242.57 116.84 0)
 			(effects
 				(font
@@ -3984,6 +4409,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 242.57 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ST(Semtech)"
+			(at 242.57 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "1N4148WS"
+			(at 242.57 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C57759 "
+			(at 242.57 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b85fdf1a-9113-462b-8647-5a5812110eb2")
 		)
@@ -4052,6 +4513,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 115.57 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 115.57 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1003T5E"
+			(at 115.57 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C149504 "
+			(at 115.57 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e361081f-d952-476b-a18a-d436dd109f80")
 		)
@@ -4063,129 +4560,6 @@
 				(path "/ec208522-e355-41c5-8297-e53350b7b90b/cf449087-5319-41a6-906c-b1896ac14578"
 					(reference "R9")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:TL074")
-		(at 130.81 157.48 0)
-		(mirror x)
-		(unit 4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3de9a41c-ed4c-417d-84b1-4ebe50816098")
-		(property "Reference" "U2"
-			(at 130.81 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL074H"
-			(at 130.81 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 129.54 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 132.08 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 130.81 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 130.81 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "TL074HIDR"
-			(at 130.81 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "b92e2e38-5b63-4e73-a026-f0e46e1bb978")
-		)
-		(pin "5"
-			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb858")
-		)
-		(pin "6"
-			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b4")
-		)
-		(pin "7"
-			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba5")
-		)
-		(pin "9"
-			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd2")
-		)
-		(pin "14"
-			(uuid "9884ad71-cce7-4156-ae4c-b278fc4ba5f4")
-		)
-		(pin "11"
-			(uuid "f3d96ae9-8914-403b-850b-24c260c75330")
-		)
-		(pin "10"
-			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f2")
-		)
-		(pin "8"
-			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc2")
-		)
-		(pin "13"
-			(uuid "dfd4338a-ba96-491a-8634-1dadd15139f9")
-		)
-		(pin "4"
-			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eef00")
-		)
-		(pin "3"
-			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8a")
-		)
-		(pin "2"
-			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2262")
-		)
-		(pin "1"
-			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c4")
-		)
-		(instances
-			(project "OCD"
-				(path "/ec208522-e355-41c5-8297-e53350b7b90b/cf449087-5319-41a6-906c-b1896ac14578"
-					(reference "U2")
-					(unit 4)
 				)
 			)
 		)
@@ -4209,7 +4583,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "150k"
 			(at 179.07 200.6599 0)
 			(effects
 				(font
@@ -4237,6 +4611,42 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 176.53 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 176.53 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 176.53 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1503T5E"
+			(at 176.53 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17470"
 			(at 176.53 199.39 0)
 			(effects
 				(font
@@ -4378,6 +4788,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 255.27 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 255.27 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F3301T5E"
+			(at 255.27 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C26010 "
+			(at 255.27 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ce6037fd-0c99-41eb-b8fd-9271ac0cd685")
 		)
@@ -4438,6 +4884,42 @@
 			)
 		)
 		(property "Description" "SOD-323 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 242.57 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 242.57 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ST(Semtech)"
+			(at 242.57 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "1N4148WS"
+			(at 242.57 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C57759 "
 			(at 242.57 146.05 0)
 			(effects
 				(font
@@ -4594,129 +5076,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:TL074")
-		(at 201.93 160.02 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6d9ae913-690e-4264-a271-4c033c7d28a5")
-		(property "Reference" "U2"
-			(at 201.93 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL074H"
-			(at 201.93 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 200.66 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 203.2 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 201.93 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 201.93 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "TL074HIDR"
-			(at 201.93 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de4")
-		)
-		(pin "5"
-			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb857")
-		)
-		(pin "6"
-			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b3")
-		)
-		(pin "7"
-			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba4")
-		)
-		(pin "9"
-			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd1")
-		)
-		(pin "14"
-			(uuid "7489c404-1898-4072-af4e-0a6107f137de")
-		)
-		(pin "11"
-			(uuid "f3d96ae9-8914-403b-850b-24c260c7532f")
-		)
-		(pin "10"
-			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f1")
-		)
-		(pin "8"
-			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc1")
-		)
-		(pin "13"
-			(uuid "92983320-fd71-4067-8980-d3fccacc08cf")
-		)
-		(pin "4"
-			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eeeff")
-		)
-		(pin "3"
-			(uuid "96099f55-431b-48e7-98e3-31a7983ef262")
-		)
-		(pin "2"
-			(uuid "a6248f9b-870a-4644-b093-035e44c3c99a")
-		)
-		(pin "1"
-			(uuid "b26f0971-e80f-49cd-930c-abfc60cdde13")
-		)
-		(instances
-			(project "OCD"
-				(path "/ec208522-e355-41c5-8297-e53350b7b90b/cf449087-5319-41a6-906c-b1896ac14578"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 308.61 162.56 270)
 		(unit 1)
@@ -4762,6 +5121,42 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 308.61 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 308.61 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 308.61 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1002T5E"
+			(at 308.61 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17414 "
+			(at 308.61 162.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4830,6 +5225,42 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 325.12 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 325.12 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 325.12 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL21C221JBANNNC"
+			(at 325.12 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C61747 "
+			(at 325.12 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4962,6 +5393,147 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:TL074")
+		(at 243.84 162.56 0)
+		(mirror x)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7286002b-7a50-4791-95ca-4e72f033b67f")
+		(property "Reference" "U2"
+			(at 243.84 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL074H"
+			(at 243.84 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 242.57 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 245.11 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
+			(at 243.84 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 243.84 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "TL074HIDR"
+			(at 243.84 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 243.84 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C2878713 "
+			(at 243.84 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "8805876e-4dae-4a7e-804b-2917327bcc74")
+		)
+		(pin "5"
+			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb858")
+		)
+		(pin "6"
+			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b4")
+		)
+		(pin "7"
+			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba5")
+		)
+		(pin "9"
+			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd2")
+		)
+		(pin "14"
+			(uuid "f6fab2bf-6ed4-4ad9-b617-3c769cf1226b")
+		)
+		(pin "11"
+			(uuid "f3d96ae9-8914-403b-850b-24c260c75330")
+		)
+		(pin "10"
+			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f2")
+		)
+		(pin "8"
+			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc2")
+		)
+		(pin "13"
+			(uuid "c9f2fce6-0347-44cc-9af3-6b3c5b6434ea")
+		)
+		(pin "4"
+			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eef00")
+		)
+		(pin "3"
+			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8a")
+		)
+		(pin "2"
+			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2262")
+		)
+		(pin "1"
+			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c4")
+		)
+		(instances
+			(project "OCD"
+				(path "/ec208522-e355-41c5-8297-e53350b7b90b/cf449087-5319-41a6-906c-b1896ac14578"
+					(reference "U2")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 77.47 144.78 0)
 		(unit 1)
@@ -5080,6 +5652,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 115.57 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 115.57 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1003T5E"
+			(at 115.57 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C149504 "
+			(at 115.57 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "81d57f76-2242-4fbb-b3f5-07b7041328db")
 		)
@@ -5148,6 +5756,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 325.12 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 325.12 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1002T5E"
+			(at 325.12 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17414 "
+			(at 325.12 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a16eeea8-5caf-467c-beca-eaf9002180e2")
 		)
@@ -5209,6 +5853,42 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 77.47 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 77.47 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 77.47 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRM21B5C1H223JA01L"
+			(at 77.47 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C77069 "
+			(at 77.47 118.11 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5286,6 +5966,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 298.45 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 298.45 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1002T5E"
+			(at 298.45 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17414 "
+			(at 298.45 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "92bdc660-de13-4856-95c5-b0043109804d")
 		)
@@ -5296,6 +6012,145 @@
 			(project "OCD"
 				(path "/ec208522-e355-41c5-8297-e53350b7b90b/cf449087-5319-41a6-906c-b1896ac14578"
 					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL074")
+		(at 97.79 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8d9bbf15-ba96-4e8a-8ae2-f7428ce6845b")
+		(property "Reference" "U2"
+			(at 97.79 127.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL074H"
+			(at 97.79 124.714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 96.52 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 99.06 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
+			(at 97.79 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 97.79 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "TL074HIDR"
+			(at 97.79 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 97.79 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C2878713 "
+			(at 97.79 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de4")
+		)
+		(pin "5"
+			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb857")
+		)
+		(pin "6"
+			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b3")
+		)
+		(pin "7"
+			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba4")
+		)
+		(pin "9"
+			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd1")
+		)
+		(pin "14"
+			(uuid "7489c404-1898-4072-af4e-0a6107f137de")
+		)
+		(pin "11"
+			(uuid "f3d96ae9-8914-403b-850b-24c260c7532f")
+		)
+		(pin "10"
+			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f1")
+		)
+		(pin "8"
+			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc1")
+		)
+		(pin "13"
+			(uuid "92983320-fd71-4067-8980-d3fccacc08cf")
+		)
+		(pin "4"
+			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eeeff")
+		)
+		(pin "3"
+			(uuid "6bc0606a-476a-4d73-878b-100a9fe0aeb0")
+		)
+		(pin "2"
+			(uuid "47438e16-741f-4bb8-a88b-729d82e11d07")
+		)
+		(pin "1"
+			(uuid "eea19836-0234-4474-a70e-1970069dc74a")
+		)
+		(instances
+			(project "OCD"
+				(path "/ec208522-e355-41c5-8297-e53350b7b90b/cf449087-5319-41a6-906c-b1896ac14578"
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -5384,7 +6239,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "150k"
 			(at 200.66 125.73 90)
 			(effects
 				(font
@@ -5412,6 +6267,42 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 200.66 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 200.66 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 200.66 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1503T5E"
+			(at 200.66 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17470"
+			(at 200.66 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5489,6 +6380,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 77.47 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 77.47 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRM2195C1H103JA01D"
+			(at 77.47 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C97905 "
+			(at 77.47 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5bbccf91-9cc0-4715-a151-16914d057337")
 		)
@@ -5500,251 +6427,6 @@
 				(path "/ec208522-e355-41c5-8297-e53350b7b90b/cf449087-5319-41a6-906c-b1896ac14578"
 					(reference "C4")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:TL074")
-		(at 243.84 162.56 0)
-		(mirror x)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95e03679-64c0-4c19-b4c4-5a1ac8c19004")
-		(property "Reference" "U2"
-			(at 243.84 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL074H"
-			(at 243.84 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 242.57 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 245.11 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 243.84 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 243.84 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "TL074HIDR"
-			(at 243.84 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de5")
-		)
-		(pin "5"
-			(uuid "3df26f15-e659-4bec-b0ee-78db79a177b2")
-		)
-		(pin "6"
-			(uuid "1c85d1a6-378c-46a9-9d2a-793060ffe005")
-		)
-		(pin "7"
-			(uuid "8c827e8e-022a-413d-889f-7cde28f4a022")
-		)
-		(pin "9"
-			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd3")
-		)
-		(pin "14"
-			(uuid "7489c404-1898-4072-af4e-0a6107f137df")
-		)
-		(pin "11"
-			(uuid "f3d96ae9-8914-403b-850b-24c260c75331")
-		)
-		(pin "10"
-			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f3")
-		)
-		(pin "8"
-			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc3")
-		)
-		(pin "13"
-			(uuid "92983320-fd71-4067-8980-d3fccacc08d0")
-		)
-		(pin "4"
-			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eef01")
-		)
-		(pin "3"
-			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb89")
-		)
-		(pin "2"
-			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2261")
-		)
-		(pin "1"
-			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c3")
-		)
-		(instances
-			(project "OCD"
-				(path "/ec208522-e355-41c5-8297-e53350b7b90b/cf449087-5319-41a6-906c-b1896ac14578"
-					(reference "U2")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:TL074")
-		(at 325.12 165.1 0)
-		(mirror x)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "97a014dd-e355-4851-817a-375d00e0d936")
-		(property "Reference" "U1"
-			(at 325.12 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL074H"
-			(at 325.12 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 323.85 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 326.39 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 325.12 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 325.12 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "TL074HIDR"
-			(at 325.12 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de6")
-		)
-		(pin "5"
-			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb859")
-		)
-		(pin "6"
-			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b5")
-		)
-		(pin "7"
-			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba6")
-		)
-		(pin "9"
-			(uuid "9158d707-2aee-4bbe-9e96-1cd5ca7f8cf5")
-		)
-		(pin "14"
-			(uuid "7489c404-1898-4072-af4e-0a6107f137e0")
-		)
-		(pin "11"
-			(uuid "f3d96ae9-8914-403b-850b-24c260c75332")
-		)
-		(pin "10"
-			(uuid "be2b8a8d-9a83-4835-959a-b8c3975daebc")
-		)
-		(pin "8"
-			(uuid "2085ad6f-b8cb-4c42-864c-616d24e2a728")
-		)
-		(pin "13"
-			(uuid "92983320-fd71-4067-8980-d3fccacc08d1")
-		)
-		(pin "4"
-			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eef02")
-		)
-		(pin "3"
-			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8b")
-		)
-		(pin "2"
-			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2263")
-		)
-		(pin "1"
-			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c5")
-		)
-		(instances
-			(project "OCD"
-				(path "/ec208522-e355-41c5-8297-e53350b7b90b/cf449087-5319-41a6-906c-b1896ac14578"
-					(reference "U1")
-					(unit 3)
 				)
 			)
 		)
@@ -5801,6 +6483,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 223.52 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 223.52 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1002T5E"
+			(at 223.52 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17414 "
+			(at 223.52 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "284fdd1d-d175-4ec7-bc47-c7b9c61330ae")
 		)
@@ -5811,6 +6529,146 @@
 			(project "OCD"
 				(path "/ec208522-e355-41c5-8297-e53350b7b90b/cf449087-5319-41a6-906c-b1896ac14578"
 					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL074")
+		(at 325.12 165.1 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9e88274e-0780-4158-bf1b-97f4820e2c22")
+		(property "Reference" "U1"
+			(at 325.12 170.434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL074H"
+			(at 325.12 172.974 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 323.85 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 326.39 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
+			(at 325.12 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 325.12 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "TL074HIDR"
+			(at 325.12 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 325.12 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C2878713 "
+			(at 325.12 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de4")
+		)
+		(pin "5"
+			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb857")
+		)
+		(pin "6"
+			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b3")
+		)
+		(pin "7"
+			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba4")
+		)
+		(pin "9"
+			(uuid "3a94ead0-e902-43e5-ac27-e305f3668cd1")
+		)
+		(pin "14"
+			(uuid "7489c404-1898-4072-af4e-0a6107f137de")
+		)
+		(pin "11"
+			(uuid "f3d96ae9-8914-403b-850b-24c260c7532f")
+		)
+		(pin "10"
+			(uuid "88a183e8-8339-4e83-b2d6-bdc6397443f1")
+		)
+		(pin "8"
+			(uuid "5e9abf75-eb3a-4992-9327-c5c0ecaa2cc1")
+		)
+		(pin "13"
+			(uuid "92983320-fd71-4067-8980-d3fccacc08cf")
+		)
+		(pin "4"
+			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eeeff")
+		)
+		(pin "3"
+			(uuid "25628b7e-838e-4ee3-8902-11a78f4139e4")
+		)
+		(pin "2"
+			(uuid "74896869-b535-4294-b3c1-bc29abd591f4")
+		)
+		(pin "1"
+			(uuid "8203c5ec-0f6f-47f0-8ca8-f60a8bd1194c")
+		)
+		(instances
+			(project "OCD"
+				(path "/ec208522-e355-41c5-8297-e53350b7b90b/cf449087-5319-41a6-906c-b1896ac14578"
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -5983,6 +6841,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 55.88 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 55.88 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1002T5E"
+			(at 55.88 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17414 "
+			(at 55.88 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9294ffc1-60e4-4986-a2e6-194dd543cfba")
 		)
@@ -6043,6 +6937,42 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 147.32 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 147.32 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 147.32 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1002T5E"
+			(at 147.32 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17414 "
+			(at 147.32 118.11 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6117,6 +7047,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 148.59 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 148.59 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1002T5E"
+			(at 148.59 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17414 "
+			(at 148.59 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "13c00b79-35cd-4391-9509-f5f7fedc8c5d")
 		)
@@ -6177,6 +7143,42 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 167.64 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 167.64 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 167.64 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F4702T5E"
+			(at 167.64 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17713 "
+			(at 167.64 157.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6246,6 +7248,42 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 121.92 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 121.92 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 121.92 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1003T5E"
+			(at 121.92 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C149504 "
 			(at 121.92 167.64 0)
 			(effects
 				(font
@@ -6499,6 +7537,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 190.5 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 190.5 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL21B105KBFNNNE"
+			(at 190.5 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C28323 "
+			(at 190.5 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "38a60f90-28e1-4fc3-a95c-f122550c3bd7")
 		)
@@ -6510,127 +7584,6 @@
 				(path "/ec208522-e355-41c5-8297-e53350b7b90b/cf449087-5319-41a6-906c-b1896ac14578"
 					(reference "C10")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:TL074")
-		(at 97.79 133.35 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d68ab766-9d4d-4385-83c2-e33f31764b40")
-		(property "Reference" "U2"
-			(at 97.79 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL074H"
-			(at 97.79 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 96.52 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 99.06 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 97.79 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 97.79 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "TL074HIDR"
-			(at 97.79 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "b5fdb89b-a6c6-477f-9a3f-1f02df484de7")
-		)
-		(pin "5"
-			(uuid "840f81a1-f122-4a8c-be6f-dbea67efb85a")
-		)
-		(pin "6"
-			(uuid "2e2763fd-ef53-4ab0-86f4-98710e1477b6")
-		)
-		(pin "7"
-			(uuid "12a9126c-a7bd-4693-a5c0-9be5d59d0ba7")
-		)
-		(pin "9"
-			(uuid "4a1f8478-67d7-40aa-98c7-3b8b477fc25c")
-		)
-		(pin "14"
-			(uuid "7489c404-1898-4072-af4e-0a6107f137e1")
-		)
-		(pin "11"
-			(uuid "f3d96ae9-8914-403b-850b-24c260c75333")
-		)
-		(pin "10"
-			(uuid "c02fc0f8-a800-41da-802a-8d4e7f1e7645")
-		)
-		(pin "8"
-			(uuid "f6944314-f5b4-458f-9145-24a4dc0a5631")
-		)
-		(pin "13"
-			(uuid "92983320-fd71-4067-8980-d3fccacc08d2")
-		)
-		(pin "4"
-			(uuid "47c73eaf-18af-4b3e-bf0c-6526307eef03")
-		)
-		(pin "3"
-			(uuid "9756ac5b-7fc1-4938-a1d3-773fdf69cb8c")
-		)
-		(pin "2"
-			(uuid "0cf3ed2b-1e1e-4c1c-8b5e-07476efd2264")
-		)
-		(pin "1"
-			(uuid "f349666f-a6ce-47db-a7b9-a237765fd4c6")
-		)
-		(instances
-			(project "OCD"
-				(path "/ec208522-e355-41c5-8297-e53350b7b90b/cf449087-5319-41a6-906c-b1896ac14578"
-					(reference "U2")
-					(unit 3)
 				)
 			)
 		)
@@ -6680,6 +7633,42 @@
 			)
 		)
 		(property "Description" "SOD-323 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 242.57 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 242.57 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ST(Semtech)"
+			(at 242.57 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "1N4148WS"
+			(at 242.57 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C57759 "
 			(at 242.57 129.54 0)
 			(effects
 				(font
@@ -6755,6 +7744,42 @@
 				(hide yes)
 			)
 		)
+		(property "Distributer" "LCSC"
+			(at 167.64 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 167.64 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F4702T5E"
+			(at 167.64 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17713 "
+			(at 167.64 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8b4e2e92-2e64-49d4-b9fc-b02bfb2c48a7")
 		)
@@ -6789,7 +7814,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "150k"
 			(at 179.07 180.3399 0)
 			(effects
 				(font
@@ -6817,6 +7842,42 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 176.53 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 176.53 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 176.53 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F1503T5E"
+			(at 176.53 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C17470"
 			(at 176.53 179.07 0)
 			(effects
 				(font
@@ -6975,7 +8036,7 @@
 				)
 			)
 		)
-		(property "Value" "220pF"
+		(property "Value" "47pF"
 			(at 250.19 63.5 90)
 			(effects
 				(font
@@ -7003,6 +8064,42 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 250.19 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 250.19 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 250.19 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL21C470JBANNNC"
+			(at 250.19 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C14857"
+			(at 250.19 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7098,7 +8195,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "fe59aa52-1a4f-4931-bf61-ad65ca09a347")
 		(property "Reference" "C7"
@@ -7109,7 +8206,7 @@
 				)
 			)
 		)
-		(property "Value" "1nF"
+		(property "Value" "47pF"
 			(at 200.66 137.16 90)
 			(effects
 				(font
@@ -7137,6 +8234,42 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 200.66 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributer" "LCSC"
+			(at 200.66 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 200.66 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL21C470JBANNNC"
+			(at 200.66 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "C14857"
+			(at 200.66 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
